@@ -3,93 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kainat Qadri - CV (No Scroll)</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Kainat Qadri - Single Page CV (No Scroll)</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="cv-dashboard">
+    <div class="app-layout">
         
-        <!-- Sidebar Column -->
+        <!-- Left Column: Fixed Profile Sidebar -->
         <aside class="sidebar">
-            <div class="profile-card">
-                <div class="avatar-wrapper">
-                    <img src="images/profile.png" alt="Kainat Qadri Profile Picture" class="profile-img">
-                </div>
-                <h1 class="user-name">Kainat Qadri</h1>
-                <p class="user-title">Computer Science Student</p>
-                <span class="badge">5th Semester</span>
+            <div class="avatar-container">
+                <img src="images/profile.png" alt="Kainat Qadri" class="avatar-img">
             </div>
+            
+            <h1 class="sidebar-name">Kainat Qadri</h1>
+            <p class="sidebar-role">Computer Science Student</p>
+            <span class="badge-tag">5th Semester</span>
 
-            <div class="sidebar-section">
+            <hr class="divider">
+
+            <div class="side-group">
                 <h3><i class="fa-solid fa-address-book"></i> Contact</h3>
-                <ul class="contact-list">
-                    <li><i class="fa-solid fa-phone"></i> 1234567899</li>
-                    <li><i class="fa-solid fa-envelope"></i> kainat@example.com</li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</li>
-                </ul>
+                <p><i class="fa-solid fa-phone"></i> 1234567899</p>
+                <p><i class="fa-solid fa-envelope"></i> kainat@example.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</p>
+                <p><i class="fa-brands fa-github"></i> Kainat521</p>
             </div>
 
-            <div class="sidebar-section">
+            <div class="side-group">
                 <h3><i class="fa-solid fa-language"></i> Languages</h3>
-                <ul class="simple-list">
-                    <li><strong>English:</strong> Fluent</li>
-                    <li><strong>Urdu:</strong> Native</li>
-                </ul>
+                <p><strong>English:</strong> Conversational</p>
+                <p><strong>Urdu:</strong> Native</p>
             </div>
         </aside>
 
-        <!-- Main Content Column -->
-        <main class="main-content">
+        <!-- Right Column: Main Content Dashboard -->
+        <main class="dashboard">
 
-            <!-- About Section -->
-            <section class="cv-card">
+            <!-- About Card -->
+            <section class="dash-card">
                 <h2><i class="fa-solid fa-user"></i> About Me</h2>
                 <p>
-                    Dedicated 5th-semester Computer Science student at Qarshi University with strong core foundations in Java, C++, Python, and Object-Oriented Programming (OOP), aiming to build scalable software solutions.
+                    Dedicated 5th-semester Computer Science student at Qarshi University proficient in Java, C++, Python, and Object-Oriented Programming (OOP), aiming to develop scalable software applications.
                 </p>
             </section>
 
-            <!-- Education Section -->
-            <section class="cv-card">
+            <!-- Education Card -->
+            <section class="dash-card">
                 <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
-                <div class="education-grid">
-                    <div class="edu-item">
-                        <span class="edu-year">Current</span>
+                <div class="edu-row">
+                    <div class="edu-box">
+                        <span class="year-badge">Current</span>
                         <h4>Qarshi University</h4>
-                        <p>BS Computer Science (5th Sem)</p>
+                        <p>BS Computer Science</p>
                     </div>
-                    <div class="edu-item">
-                        <span class="edu-year">2022–2024</span>
+                    <div class="edu-box">
+                        <span class="year-badge">2022–2024</span>
                         <h4>Punjab College</h4>
-                        <p>F.Sc Pre-Engineering / ICS</p>
+                        <p>F.Sc / Intermediate</p>
                     </div>
-                    <div class="edu-item">
-                        <span class="edu-year">2020–2022</span>
+                    <div class="edu-box">
+                        <span class="year-badge">2020–2022</span>
                         <h4>The Punjab School</h4>
                         <p>Matriculation</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Skills Section -->
-            <section class="cv-card">
-                <h2><i class="fa-solid fa-code"></i> Skills & Expertise</h2>
-                <div class="skills-flex">
-                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
-                    <span class="skill-tag"><i class="fa-solid fa-c"></i> C++</span>
-                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-                    <span class="skill-tag"><i class="fa-solid fa-cubes"></i> OOP</span>
+            <!-- Skills Card -->
+            <section class="dash-card">
+                <h2><i class="fa-solid fa-code"></i> Programming Skills</h2>
+                <div class="skills-wrapper">
+                    <span class="skill-pill"><i class="fa-brands fa-java"></i> Java</span>
+                    <span class="skill-pill"><i class="fa-solid fa-c"></i> C++</span>
+                    <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="skill-pill"><i class="fa-solid fa-cubes"></i> OOP</span>
+                    <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
                 </div>
             </section>
 
-            <!-- Experience Section -->
-            <section class="cv-card">
-                <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
-                <p class="small-text">
-                    Focused on academic software development projects and ready for industry internships.
-                </p>
+            <!-- Experience Card -->
+            <section class="dash-card">
+                <h2><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+                <p class="muted">Currently focused on academic coursework and projects. Ready for future software engineering internships.</p>
             </section>
 
         </main>
